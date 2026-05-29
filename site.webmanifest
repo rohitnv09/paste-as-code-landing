@@ -1,0 +1,17 @@
+{
+  "name": "Paste As Code",
+  "short_name": "pac",
+  "description": "Turn screenshots and images into clean Markdown code using local OCR.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#09090B",
+  "theme_color": "#10B981",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

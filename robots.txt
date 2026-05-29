@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://paste-as-code.vercel.app/sitemap.xml
