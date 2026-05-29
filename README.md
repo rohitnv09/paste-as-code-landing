@@ -4,6 +4,7 @@ Landing page for [`paste-as-code`](https://www.npmjs.com/package/paste-as-code),
 
 Live package links:
 
+- Website: https://paste-as-code.vercel.app
 - npm: https://www.npmjs.com/package/paste-as-code
 - GitHub: https://github.com/rohitnv09/paste-as-code
 
@@ -90,15 +91,6 @@ Before deploying, run:
 
 ```sh
 npm run build
-```
-
-The latest local Lighthouse pass scored:
-
-```txt
-Performance: 100
-Accessibility: 100
-Best Practices: 100
-SEO: 100
 ```
 
 ## License
