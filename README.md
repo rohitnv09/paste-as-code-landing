@@ -1,37 +1,106 @@
 # Paste As Code Landing
 
-Landing page for [`paste-as-code`](https://www.npmjs.com/package/paste-as-code), a CLI that converts screenshots of code and errors into clean Markdown.
+Landing page for [`paste-as-code`](https://www.npmjs.com/package/paste-as-code), a small CLI for turning screenshots of code, stack traces, and terminal output into clean Markdown.
 
-## Deploy
+Live package links:
 
-Deploy the repo on Vercel as a static site.
+- npm: https://www.npmjs.com/package/paste-as-code
+- GitHub: https://github.com/rohitnv09/paste-as-code
 
-Build command:
+## Tech Stack
+
+- Static HTML
+- Tailwind CSS
+- Small vanilla JavaScript helpers
+- Vercel static hosting
+
+## Getting Started
+
+Install dependencies:
+
+```sh
+npm install
+```
+
+Build the production CSS:
 
 ```sh
 npm run build
 ```
 
-Output directory:
-
-```sh
-.
-```
-
-## Local Preview
+Run a local preview:
 
 ```sh
 npm run dev
 ```
 
-## SEO Checklist
+The local server will print the preview URL in the terminal.
 
-- Canonical URL
-- Robots meta
-- Open Graph tags
-- Twitter card tags
+## Deploying
+
+This repo is set up for Vercel.
+
+Use these settings:
+
+```txt
+Build Command: npm run build
+Output Directory: .
+```
+
+The site is static, so there is no server runtime or API route to configure.
+
+## Project Structure
+
+```txt
+.
+|-- index.html
+|-- src
+|   |-- app.js
+|   |-- input.css
+|   `-- theme-init.js
+|-- scripts
+|   `-- strip-css-banner.cjs
+|-- styles.css
+|-- vercel.json
+|-- robots.txt
+|-- sitemap.xml
+|-- site.webmanifest
+|-- favicon.svg
+|-- apple-touch-icon.svg
+`-- og-image.svg
+```
+
+## Production Notes
+
+The page includes:
+
+- Canonical and social metadata
+- Open Graph and Twitter card tags
 - JSON-LD structured data
-- `robots.txt`
-- `sitemap.xml`
-- Web manifest
-- Favicon and social image assets
+- `robots.txt` and `sitemap.xml`
+- Web manifest and favicon assets
+- Content Security Policy and security headers through `vercel.json`
+- No inline executable JavaScript
+- No external font dependency
+- Accessible landmarks, skip link, labels, and live copy feedback
+
+## Validation
+
+Before deploying, run:
+
+```sh
+npm run build
+```
+
+The latest local Lighthouse pass scored:
+
+```txt
+Performance: 100
+Accessibility: 100
+Best Practices: 100
+SEO: 100
+```
+
+## License
+
+MIT
